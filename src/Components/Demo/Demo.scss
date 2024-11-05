@@ -1,0 +1,133 @@
+// .pocket-testimonial {
+//   padding: 40px 0;
+//   text-align: center;
+
+//   &__inner {
+//     > h2 {
+//       font-family: "Crimson Pro", serif;
+//       font-weight: 700;
+//     }
+//   }
+
+//   .swiper-container {
+//     position: relative;
+//   }
+
+//   .custom-navigation {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     margin-top: 20px;
+
+//     button {
+//       background-color: #01658e;
+//       border: none;
+//       color: #fff;
+//       padding: 10px 20px;
+//       margin: 0 10px;
+//       font-size: 14px;
+//       cursor: pointer;
+//       border-radius: 5px;
+//       transition: background-color 0.3s ease;
+
+//       &:hover {
+//         background-color: #014f6c;
+//       }
+//     }
+
+//     .custom-pagination {
+//       display: flex;
+//       justify-content: center;
+//       align-items: center;
+//       margin: 0 15px;
+//     }
+//   }
+
+//   .swiper-pagination-bullet {
+//     width: 12px;
+//     height: 12px;
+//     background-color: #0481b3;
+//     opacity: 1;
+//     margin: 0 5px;
+//     transition: background-color 0.3s ease;
+
+//     &-active {
+//       background-color: #0cb0ec42;
+//     }
+//   }
+
+//   .swiper-button-prev,
+//   .swiper-button-next {
+//     display: none; // Hide default buttons, using custom navigation
+//   }
+
+//   .pocket-testimonial__item {
+//     background-color: #fafafa;
+//     padding: 30px 3px;
+//     display: flex;
+//     justify-content: space-between;
+
+//     .testimonial-image {
+//       img {
+//         border-radius: 10px;
+//         width: 90%;
+//         height: 100%;
+//       }
+//     }
+
+//     .testimonial-contents {
+//       margin-top: 5rem;
+//       display: flex;
+//       flex-direction: column;
+//       justify-content: center;
+//       align-items: center;
+
+//       &__individual {
+//         p {
+//           color: #000;
+//           font-weight: 700;
+//         }
+
+//         span {
+//           color: #41484d;
+//         }
+//       }
+
+//       &__quote {
+//         margin-top: 15px;
+
+//         p {
+//           &:last-of-type {
+//             margin-bottom: 0;
+//           }
+//         }
+//       }
+//     }
+//   }
+
+//   @media screen and (min-width: 768px) {
+//     .pocket-testimonial {
+//       padding: 80px 0;
+
+//       .swiper-slide {
+//         scale: 1;
+//         transition: 300ms scale ease-in-out;
+
+//         &:not(.swiper-slide-active) {
+//           scale: 0.9;
+//         }
+//       }
+//     }
+//   }
+
+//   @media screen and (min-width: 992px) {
+//     .pocket-testimonial {
+//       .pocket-testimonial__item {
+//         img {
+//           height: 80px;
+//           width: 80px;
+//         }
+//       }
+//     }
+//   }
+// }

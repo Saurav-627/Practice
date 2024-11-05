@@ -1,0 +1,60 @@
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin: 20px;
+}
+
+.image-card {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  opacity: 0.7;
+}
+
+.overlay {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  position: absolute;
+  bottom: 0;
+  color: white;
+  padding: 1.5rem;
+  transition: background-color 0.3s ease;
+}
+
+// .image-card:hover .overlay {
+//   background-color: rgba(0, 0, 0, 0.8);
+// }
+
+h3 {
+  margin: 0;
+  font-size: 1rem;
+  font-family: Mukta;
+  font-weight: bold;
+}
+
+.btnImage {
+  border: none;
+  background: none;
+  color: #ffffff;
+  cursor: pointer;
+  font-family: Mukta;
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-align: left;
+  padding:0 ;
+  transition: background-color 0.3s ease;
+}
+
+// button:hover {
+//   background-color: #f0f0f0;
+// }

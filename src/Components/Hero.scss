@@ -1,0 +1,79 @@
+:root{
+    --heading-color:#000;
+    --paragraph-color: #494747;
+    --span-color: #01658E;
+}
+
+
+@keyframes rotateBackground {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.landing-section {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  
+
+
+  .bg-svg > img{
+    position: absolute;
+    overflow: visible;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    object-fit: cover;
+    animation: rotateBackground 20s linear infinite; /* Infinite rotation */
+    transform-origin: center;
+   
+  }
+}
+
+.head {
+  color: var(--heading-color) ;
+  font-size: 4.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+
+  
+  @media (max-width: 768px) {
+    font-size: 3rem; /* Adjust the size for smaller screens */
+  }
+
+  @media (max-width: 576px) {
+    font-size: 2.5rem;
+  }
+
+  span{
+    color: var(--span-color);
+  }
+}
+
+.para {
+  color: var(--paragraph-color) ;
+  text-align: center;
+  font-family: Raleway;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%; /* 19.2px */
+}
+
+.btn {
+  padding: 0.8rem 8rem;
+  border-radius: 3rem;
+  font-family: Mukta;
+  font-size: 1.5rem;
+  font-weight: 500;
+
+  @media (max-width: 576px) {
+    padding: 0.8rem 4rem; /* Adjust padding for smaller screens */
+  }
+}

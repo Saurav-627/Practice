@@ -1,0 +1,160 @@
+// .pocket-testimonial {
+//   padding: 40px 0;
+//   text-align: center;
+
+//   &__inner {
+//     > h2 {
+//       font-family: "Crimson Pro", serif;
+//       font-weight: 700;
+//     }
+//   }
+
+//   &__item {
+//     background-color: #fafafa;
+//     padding: 30px 3px;
+//     display: flex;
+//     justify-content: space-between;
+
+//     .testimonial-image {
+//       display: flex;
+//       position: relative;
+
+//       img {
+//         border-radius: 10px;
+//         width: 90%;
+//         height: 100%;
+//         // object-fit: cover;
+//         // object-position: center;
+//       }
+//     }
+//   }
+
+//   .testimonial-contents {
+//     margin-top: 5rem;
+//     position: relative;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     align-items: center;
+//     font-family: "Mukta";
+
+//     &__individual {
+//       p {
+//         color: #000;
+//         font-weight: 700;
+//       }
+
+//       span {
+//         color: #41484d;
+//       }
+//     }
+
+//     &__quote {
+//       margin-top: 15px;
+
+//       p {
+//         &:last-of-type {
+//           margin-bottom: 0;
+//         }
+//       }
+//     }
+//   }
+
+//   // .navigation-button {
+//   //   position: relative;
+//   //   display: flex;
+//   //   gap: 3rem;
+//   //   justify-content: center;
+   
+//   //   .test-prev {
+//   //   background-image: url("../../public/Previous.png");
+//   //   }
+//   //   .test-next {
+//   //    background: url("../../public/Next.png");
+//   //   }
+//   // }
+
+//   .swiper {
+//     &-button-prev,
+//     &-button-next {
+//       bottom: 0;
+//       height: 100%;
+//       margin: 0 0;
+//       left: auto;
+//       right: -12%;
+//       top: auto;
+//       transform: none;
+//       width: 100%;
+
+//       &::after {
+//         background-size: 100%;
+//         background-repeat: no-repeat;
+//         content: "";
+//         height: 30px;
+//         width: 30px;
+//       }
+//     }
+
+//     &-button-prev {
+//       margin-right: 5rem;
+
+//       &::after {
+//         background-image: url("data:image/svg+xml,%3Csvg width='10' height='9' viewBox='0 0 10 9' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4.837.163a.556.556 0 0 1 0 .785L1.341 4.444l3.496 3.497a.556.556 0 1 1-.785.785L.162 4.837a.556.556 0 0 1 0-.785l3.89-3.89a.556.556 0 0 1 .785 0Z' fill='%2300658e'/%3E%3Cpath d='M0 4.444c0-.306.249-.555.556-.555h8.888a.556.556 0 1 1 0 1.111H.556A.556.556 0 0 1 0 4.444Z' fill='%2300658e'/%3E%3C/svg%3E");
+//       }
+//     }
+
+//     &-button-next {
+//       &::after {
+//         background-image: url("data:image/svg+xml,%3Csvg width='10' height='9' viewBox='0 0 10 9' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5.163 8.726a.556.556 0 0 1 0-.786l3.496-3.496L5.163.948a.556.556 0 1 1 .785-.785l3.89 3.888a.556.556 0 0 1 0 .786l-3.89 3.889a.556.556 0 0 1-.785 0Z' fill='%2300658e'/%3E%3Cpath d='M10 4.444A.556.556 0 0 1 9.444 5H.556a.556.556 0 0 1 0-1.111h8.888c.307 0 .556.248.556.555Z' fill='%2300658e'/%3E%3C/svg%3E");
+//       }
+//     }
+
+//     &-slide {
+//       height: auto;
+//     }
+//   }
+// }
+
+// @media screen and (min-width: 768px) {
+//   .pocket-testimonial {
+//     .swiper {
+//       &::after {
+//         background: linear-gradient(
+//           90deg,
+//           #fcfcff 0%,
+//           rgba(252, 252, 255, 0) 31.02%,
+//           rgba(252, 252, 255, 0) 51.33%,
+//           rgba(252, 252, 255, 0) 68.52%,
+//           #fcfcff 100%
+//         );
+//         content: "";
+//         inset: 0;
+//         position: absolute;
+//         pointer-events: none;
+//         z-index: 1;
+//       }
+
+//       &-slide {
+//         scale: 1;
+//         transition: 300ms scale ease-in-out;
+
+//         &:not(.swiper-slide-active) {
+//           scale: 0.9;
+//         }
+//       }
+//     }
+//   }
+// }
+
+// @media screen and (min-width: 992px) {
+//   .pocket-testimonial {
+//     padding: 80px 0;
+
+//     &__item {
+//       img {
+//         height: 80px;
+//         width: 80px;
+//       }
+//     }
+//   }
+// }

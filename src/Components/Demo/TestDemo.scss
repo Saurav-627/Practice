@@ -1,0 +1,215 @@
+.pocket-testimonial {
+  padding: 40px 0;
+  font-size: 30px;
+  max-width: 1440px;
+  width: 100%;
+  margin: auto;
+
+  &__inner {
+    > h2 {
+      font-family: "Mukta";
+      font-weight: 700;
+      text-align: center;
+    }
+  }
+
+  .testimonial-header {
+    margin:0 50px;
+    font-size: 16px;
+  }
+
+  .swiper-container {
+    position: relative;
+  }
+
+  .custom-navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+
+    button {
+      background: none;
+      border: none;
+      color: #fff;
+      padding: 10px 20px;
+      margin: 0 10px;
+      font-size: 14px;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+
+      // &:hover {
+      //   background-color: #014f6c;
+      // }
+    }
+
+    .custom-pagination {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 15px;
+      width: auto;
+      gap: 25px;
+    }
+  }
+
+  .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background-color: #eaeaea;
+    opacity: 1;
+    margin: 0 5px;
+    transition: background-color 0.3s ease;
+
+    &-active {
+      background-color: #01658e;
+    }
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: none; // Hide default buttons, using custom navigation
+  }
+
+  .pocket-testimonial__item {
+    padding: 10px 6px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    gap: 25px;
+    background-color: #fafafa;
+    border-radius: 20px;
+
+    .quotes_svg {
+      position: absolute;
+      right: 0;
+      top: 0;
+      padding-right: 10px;
+    }
+
+    .testimonial-image {
+     display: flex;
+     justify-content: center;
+     width: 150%;
+     
+      img {
+        border-radius: 10px;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        flex-shrink: 0;
+      }
+    }
+
+    .testimonial-contents {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      /* align-items: center; */
+      font-family: "Mukta";
+      margin-top: 50px;
+      text-align: left;
+
+      &__individual {
+        p:nth-child(1) {
+          font-size: 0.8em;
+          color: #202020;
+          font-weight: 700;
+        }
+
+        p:last-child {
+          font-size: 0.5em;
+          font-weight: 400;
+          color: #808080;
+        }
+      }
+
+      &__quote {
+        > p {
+          // font-size: clamp(10px, calc(2vw + 1px), 44px);
+          // padding: calc( 1em + 2px);
+          font-size: 0.5em;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 576px) {
+    .pocket-testimonial {
+      font-size: 10px;
+
+     
+    }
+
+    .pocket-testimonial__inner {
+      .testimonial-header{
+        margin: 0;
+      }
+      .swiper {
+        padding-bottom: 0 !important;
+      }
+      .pocket-testimonial__item {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        // .testimonial-image {
+        //   width: 100%;
+        //   height: auto;
+        // }
+        .quotes_svg {
+         display: none;
+        }    
+
+        .testimonial-contents {
+          margin: 0;
+        }
+      }
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+
+    .pocket-testimonial{
+      font-size: 24px;
+    }
+
+    .pocket-testimonial__inner {
+      .testimonial-header{
+        margin: 0;
+      }
+      .swiper {
+        &::after {
+          background: linear-gradient(
+            90deg,
+            #fcfcff 0%,
+            rgba(252, 252, 255, 0) 31.02%,
+            rgba(252, 252, 255, 0) 51.33%,
+            rgba(252, 252, 255, 0) 68.52%,
+            #fcfcff 100%
+          );
+          content: "";
+          inset: 0;
+          position: absolute;
+          pointer-events: none;
+          z-index: 1;
+        }
+        .swiper-slide {
+          scale: 1;
+          transition: 300ms scale ease-in-out;
+
+          &:not(.swiper-slide-active) {
+            scale: 0.9;
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 992px) {
+    .pocket-testimonial{
+      font-size: 100px
+    }
+  }
+}

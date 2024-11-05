@@ -1,0 +1,110 @@
+.horoscope-section {
+  padding: 40px;
+  background-color: lightgray;
+  width: 100%;
+  background-image: url("../public/Horoscope Section Image.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-color: #fff;
+   font-family: Mukta;
+
+  .section-header {
+    text-align: center;
+    margin-bottom: 20px;
+
+    h2 {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #222;
+    }
+
+    p {
+      font-size: 1rem;
+      color: #666;
+      
+      margin: 10px auto;
+    }
+  }
+
+  .horoscope-container {
+    background-color: #FAF8E8;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+
+    .horoscope-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+
+      @media (max-width: 768px) {
+        grid-template-columns: 1fr;
+      }
+
+      .horoscope-card {
+        background-color: #FAF8E8;
+        padding: 20px;
+        border: 1px solid #e0e0e0;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        transition: transform 0.3s ease;
+
+        &-right {
+          flex-direction: row-reverse;
+        }
+
+        // &:hover {
+        //   transform: scale(1.05);
+        // }
+
+        .horoscope-icon {
+          width: 100px;
+          height: auto;
+          margin-right: 15px;
+        }
+
+        .horoscope-info {
+          h3 {
+            font-size: 1.25rem;
+            margin-bottom: 8px;
+            color: #333;
+          }
+
+          p {
+            font-size: 0.875rem;
+            color: #000;
+
+            a {
+              color: #2f8cff;
+              text-decoration: none;
+              margin-left: 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .middleButton {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 1.2rem;
+
+    .view-all-btn {
+      background-color: #f0f0f0;
+      border: none;
+      color: #737373;
+      font-size: 1rem;
+      cursor: pointer;
+      padding: 10px 20px;
+      border-radius: 20px;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: #e0e0e0;
+      }
+    }
+  }
+}

@@ -1,0 +1,10 @@
+.background-svg {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../public/Illustration.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  
+  display: flex;
+}

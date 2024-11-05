@@ -1,0 +1,138 @@
+// .horoscope-section {
+//   padding: 40px;
+//   width: 100%;
+//   background-color: #fff;
+//   font-family: "Mukta";
+
+//   .banner_ad {
+//     height: 218px;
+//     background: #cf9393;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     border-radius: 8px;
+
+//     > p {
+//       font-weight: 500;
+//     }
+//   }
+
+//   .section-header {
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+//     margin-top: 20px;
+//     padding: 20px;
+
+//     h2 {
+//       font-size: 2rem;
+//       font-weight: bold;
+//       color: #222;
+//       line-height: 30px;
+//     }
+
+//     p {
+//       font-size: 1rem;
+//       color: #666;
+//     }
+//   }
+
+//   .horizonline {
+//     height: 18px;
+//     margin: 0 20px;
+//     // background: #d9e8ee;
+//     background: rgba(19, 59, 124, 0.20);
+//     border: none;
+//     // clip-path: polygon(20px 0%, 100% 0%, 100% 100%, 0% 100%);
+//     clip-path: polygon(
+//       20px 0,
+//       calc(100% - 20px) 0,
+//       100% 20px,
+//       100% 100%,
+//       0 100%,
+//       0 20px
+//     );
+//   }
+
+//   .horoscope-container {
+//     padding: 20px;
+//     border-radius: 10px;
+//     position: relative;
+
+//     .horoscope-grid {
+//       display: grid;
+//       grid-template-columns: repeat(2, 1fr);
+//       gap: 20px;
+
+//       @media (max-width: 768px) {
+//         grid-template-columns: 1fr;
+//       }
+
+//       .horoscope-card {
+//         padding: 20px 0 20px 20px;
+//         border: 1px solid #e0e0e0;
+//         border-radius: 8px;
+//         display: flex;
+//         align-items: center;
+//         gap: 10px;
+
+//         &:hover {
+//           outline:1px  solid #01658e;
+//         }
+
+//         .horoscope-icon {
+//           width: 100px;
+//           height: auto;
+//           margin-right: 15px;
+//         }
+
+//         .horoscope-info {
+//           h3 {
+//             font-size: 1.25rem;
+//             margin-bottom: 8px;
+//             color: #333;
+//           }
+
+//           p {
+//             font-size: 0.875rem;
+//             color: #000;
+
+//             a {
+//               color: #2f8cff;
+//               text-decoration: none;
+//               margin-left: 5px;
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+
+//   .middleButton {
+//     display: flex;
+//     justify-content: flex-end;
+//     gap: 10px;
+
+//     div:nth-of-type(2) .view-all-btn {
+//       // Specific styles for only the first button
+//       background: #d9e8ee;
+//       color: #01658e;
+//     }
+
+//     .view-all-btn {
+//       border: none;
+//       color: #595959;
+//       font-size: 1rem;
+//       cursor: pointer;
+//       padding: 5px 30px;
+//       border-radius: 20px;
+//       background: none;
+//       transition: 0.5s;
+
+//       &:hover {
+//         background: #d9e8ee;
+//         color: #01658e;
+//       }
+//     }
+//   }
+// }
